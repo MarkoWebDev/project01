@@ -1,0 +1,22 @@
+//Kanit font
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
+
+//global-colors
+:root {
+  --basic-white-color: #ffffff;
+  --basic-green-color: #68ff21;
+  --basic-orange-color: #ffa800;
+  --basic-red-color: #ff3030;
+  --basic-blue-color: #105bfb;
+  --primary-gray-light-color: #e4e4e4;
+  --primary-gray-color: #bababa;
+  --primary-black-color: #191919;
+  --secondary-yellow-light-color: #fff9ad;
+  --secondary-yellow-color: #fef35b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

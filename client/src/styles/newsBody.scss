@@ -1,0 +1,308 @@
+.header-section {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .title {
+      align-items: flex-start;
+      font-family: "Kanit", sans-serif;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 100%;
+      max-width: 450px;
+      color: var(--primary-black-color);
+      word-wrap: break-word;
+      margin-bottom: 20px;
+    }
+    .time {
+      font-family: "Kanit", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--primary-gray-color);
+      padding-top: 25px;
+    }
+  }
+  .header-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.header-right-img {
+  width: 100%;
+  height: 100%;
+}
+.category-btn {
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 5px;
+  width: 100%;
+  align-items: flex-start;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid var(--primary-black-color);
+  color: var(--primary-black-color);
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--primary-gray-light-color);
+  }
+}
+hr {
+  margin: 15px 0;
+  height: 4px;
+  background-color: var(--primary-black-color);
+}
+
+.middle-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 24px;
+  width: 100%;
+  margin: 0 auto;
+  .card {
+    padding-bottom: 30px;
+    width: 100%;
+    .title {
+      align-items: flex-start;
+      font-family: "Kanit", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary-black-color);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+    .time {
+      font-family: "Kanit", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--primary-gray-color);
+    }
+  }
+}
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 20px 0;
+  max-height: 700px;
+}
+.card-bottom {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 600px;
+  .bottom-img {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+  }
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.right-side {
+  align-items: left;
+  padding-left: 20px;
+  .time {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary-gray-color);
+  }
+  .title {
+    align-items: flex-start;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-black-color);
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    max-width: 400px;
+  }
+}
+.rule {
+  margin: 15px 0;
+  height: 2px;
+  background-color: var(--primary-gray-light-color);
+}
+.sort-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  .btn-sort {
+    display: block;
+    margin-left: 24px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 2px solid var(--primary-black-color);
+    color: var(--primary-black-color);
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--basic-white-color);
+    &:hover {
+      background-color: var(--primary-gray-light-color);
+    }
+  }
+}
+
+//mobile view
+.header-section-mobile {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+  .header-mobile-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: flex-start;
+    max-width: 360px;
+    .title-mobile {
+      font-size: 22px;
+      text-align: left;
+    }
+  }
+  .mobile-header-right {
+    margin: 0 auto;
+    .mobile-header-right-img {
+      width: 100%;
+      max-width: 360px;
+      height: 100%;
+    }
+  }
+  .mobile-btns {
+    margin: 20px 0;
+    .mobile-time {
+      padding-top: 20px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--primary-gray-color);
+    }
+  }
+}
+.mobile-middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .card {
+    padding-bottom: 30px;
+    margin: 0 auto;
+    .title {
+      align-items: flex-start;
+      font-family: "Kanit", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary-black-color);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+    .time {
+      font-family: "Kanit", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--primary-gray-color);
+    }
+  }
+}
+.bottom-section-mobile {
+  display: flex;
+  flex-direction: column;
+
+  .mobile-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-card-bottom {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    .mobile-image-bottom {
+      width: 100%;
+      max-width: 175px;
+      height: 100%;
+      max-height: 175px;
+    }
+  }
+}
+.mobile-right-side {
+  padding-left: 10px;
+  align-items: left;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 200px;
+  vertical-align: auto;
+  > .time {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--primary-gray-color);
+  }
+  .mobile-category-btn-bottom {
+    text-decoration: none;
+    align-items: flex-start;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid var(--primary-black-color);
+    color: var(--primary-black-color);
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: var(--primary-gray-light-color);
+    }
+  }
+}
+
+.mobile-bottom-title {
+  padding: 10px 0;
+  font-size: 14px;
+}
+.rule-none {
+  display: none;
+}
+.mobile-sort-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 5px;
+  .btn-sort {
+    display: block;
+    margin-left: 24px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 2px solid var(--primary-black-color);
+    color: var(--primary-black-color);
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--basic-white-color);
+    &:hover {
+      background-color: var(--primary-gray-light-color);
+    }
+  }
+}
